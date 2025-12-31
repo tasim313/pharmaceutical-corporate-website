@@ -6,8 +6,10 @@ import Footer from "@/components/footer"
 import AwardsHero from "@/components/awards/awards-hero"
 import AwardsGrid from "@/components/awards/awards-grid"
 import RecognitionPrograms from "@/components/awards/recognition-programs"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 export default function AwardsPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [mounted, setMounted] = useState(false)
 

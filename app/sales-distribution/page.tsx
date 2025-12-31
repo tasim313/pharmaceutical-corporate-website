@@ -4,8 +4,9 @@ import { useState } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Globe, Warehouse, TrendingUp, Users, Target } from "lucide-react"
-
+import useAntiInspect from "@/hooks/useAntiInspect"
 export default function SalesDistribution() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
 
   const distributionChannels = [

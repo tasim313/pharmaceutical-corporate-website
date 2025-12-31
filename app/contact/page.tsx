@@ -6,8 +6,10 @@ import { useState } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 export default function ContactPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [formData, setFormData] = useState({
     name: "",

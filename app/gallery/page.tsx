@@ -4,6 +4,7 @@ import { useState } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Maximize2 } from "lucide-react"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 const allGalleryItems = [
   {
@@ -95,6 +96,7 @@ const allGalleryItems = [
 const categories = ["All", "Research", "Manufacturing", "Clinical", "Healthcare", "Distribution", "Innovation"]
 
 export default function GalleryPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [selectedImage, setSelectedImage] = useState<(typeof allGalleryItems)[0] | null>(null)

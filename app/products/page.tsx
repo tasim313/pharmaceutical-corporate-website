@@ -6,8 +6,9 @@ import Footer from "@/components/footer"
 import ProductHero from "@/components/products/product-hero"
 import ProductFilter from "@/components/products/product-filter"
 import ProductGrid from "@/components/products/product-grid"
-
+import useAntiInspect from "@/hooks/useAntiInspect"
 export default function ProductsPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [mounted, setMounted] = useState(false)

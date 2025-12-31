@@ -6,8 +6,9 @@ import Footer from "@/components/footer"
 import ExportHero from "@/components/export/export-hero"
 import ExportRegions from "@/components/export/export-regions"
 import ExportStats from "@/components/export/export-stats"
-
+import useAntiInspect from "@/hooks/useAntiInspect"
 export default function ExportMarketsPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [mounted, setMounted] = useState(false)
 

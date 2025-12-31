@@ -11,8 +11,10 @@ import Milestones from "@/components/about/milestones"
 import SisterConcerns from "@/components/about/sister-concerns"
 import CorporateSocialResponsibility from "@/components/about/corporate-social-responsibility"
 import DirectorsConduct from "@/components/about/directors-conduct"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 export default function AboutPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
 
   const toggleTheme = () => {

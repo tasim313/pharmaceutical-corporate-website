@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Briefcase, MapPin, DollarSign, Clock } from "lucide-react"
 import Link from "next/link"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 const jobListings = [
   {
@@ -78,6 +79,7 @@ const jobListings = [
 ]
 
 export default function CareersPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [selectedJob, setSelectedJob] = useState<(typeof jobListings)[0] | null>(null)
 

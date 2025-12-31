@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Calendar, Newspaper, Filter, ChevronRight } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 const mediaItems = [
   {
@@ -83,6 +84,7 @@ const mediaItems = [
 ]
 
 export default function MediaCenterPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [selectedYear, setSelectedYear] = useState<number | null>(null)

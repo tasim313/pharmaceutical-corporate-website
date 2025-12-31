@@ -6,8 +6,9 @@ import Footer from "@/components/footer"
 import NewsHero from "@/components/news/news-hero"
 import NewsFilter from "@/components/news/news-filter"
 import NewsGrid from "@/components/news/news-grid"
-
+import useAntiInspect from "@/hooks/useAntiInspect"
 export default function NewsPage() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [mounted, setMounted] = useState(false)

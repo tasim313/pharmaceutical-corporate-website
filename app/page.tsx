@@ -16,8 +16,10 @@ import Sustainability from "@/components/sustainability"
 import Careers from "@/components/careers"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import useAntiInspect from "@/hooks/useAntiInspect"
 
 export default function Home() {
+  useAntiInspect()
   const [isDark, setIsDark] = useState(false)
   const [mounted, setMounted] = useState(false)
 
